@@ -1,0 +1,370 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>BookNest</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:white;
+color:#0f172a;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#1e3a8a;
+color:white;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+}
+
+.tabs a{
+margin:0 15px;
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+.tabs a:hover{
+color:#93c5fd;
+}
+
+/* TOP SECTION */
+
+.top-section{
+display:flex;
+gap:30px;
+padding:40px 60px;
+}
+
+/* ADVERTISEMENT */
+
+.ad-banner{
+flex:3;
+background:linear-gradient(90deg,#1e3a8a,#2563eb);
+color:white;
+padding:40px;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.ad-text h1{
+font-size:36px;
+margin:10px 0;
+}
+
+.price{
+margin-top:10px;
+font-size:20px;
+}
+
+.old{
+text-decoration:line-through;
+margin-right:10px;
+}
+
+.new{
+font-size:26px;
+font-weight:700;
+}
+
+.ad-image img{
+width:200px;
+border-radius:10px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+flex:1;
+background:#f1f5ff;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.search-box input{
+width:100%;
+padding:10px;
+border:1px solid #cbd5e1;
+border-radius:6px;
+margin-bottom:20px;
+}
+
+/* TAB BUTTONS */
+
+.tab-buttons{
+display:flex;
+gap:5px;
+margin-bottom:15px;
+}
+
+.tab-buttons button{
+flex:1;
+border:none;
+background:#e2e8f0;
+padding:8px;
+cursor:pointer;
+font-size:13px;
+}
+
+.tab-buttons button:hover{
+background:#1e3a8a;
+color:white;
+}
+
+.tab-content p{
+font-size:14px;
+color:#475569;
+margin:6px 0;
+}
+
+/* CATEGORY */
+
+.category{
+padding:40px 60px;
+}
+
+.category h2{
+color:#1e3a8a;
+margin-bottom:20px;
+}
+
+/* BOOK ROW */
+
+.book-row{
+display:flex;
+gap:20px;
+overflow-x:auto;
+}
+
+.book-row::-webkit-scrollbar{
+display:none;
+}
+
+/* BOOK CARD */
+
+.book{
+min-width:200px;
+background:#f1f5ff;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.book:hover{
+transform:translateY(-8px);
+}
+
+.book img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px 10px 0 0;
+}
+
+.book h4{
+margin:10px 0 5px;
+}
+
+.author{
+font-size:14px;
+color:#475569;
+}
+
+.book button{
+margin-bottom:10px;
+padding:6px 10px;
+border:none;
+background:#1e3a8a;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.book button:hover{
+background:#2563eb;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">📚 BookNest</div>
+
+<div class="tabs">
+<a href="#">Home</a>
+<a href="#">Genres</a>
+<a href="#">Best Sellers</a>
+<a href="#">New Releases</a>
+</div>
+
+</nav>
+
+<!-- TOP SECTION -->
+
+<div class="top-section">
+
+<!-- FEATURED AD -->
+
+<div class="ad-banner">
+
+<div class="ad-text">
+
+<h4>🔥 Special Offer</h4>
+
+<h1>Atomic Habits</h1>
+
+<h3>James Clear</h3>
+
+<p>Build good habits and break bad ones with this bestselling guide.</p>
+
+<div class="price">
+<span class="old">$24</span>
+<span class="new">$12</span>
+</div>
+
+</div>
+
+<div class="ad-image">
+<img src="https://covers.openlibrary.org/b/id/10523338-L.jpg">
+</div>
+
+</div>
+
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="search-box">
+<input type="text" placeholder="Search books...">
+</div>
+
+<div class="tab-buttons">
+<button>Favourites</button>
+<button>Trending</button>
+<button>Recent</button>
+</div>
+
+<div class="tab-content">
+
+<p>⭐ Atomic Habits</p>
+<p>⭐ The Hobbit</p>
+<p>⭐ Harry Potter</p>
+<p>⭐ Deep Work</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- HORROR -->
+
+<section class="category">
+
+<h2>👻 Horror</h2>
+
+<div class="book-row">
+
+<div class="book">
+<img src="https://covers.openlibrary.org/b/id/8235116-L.jpg">
+<h4>Dracula</h4>
+<div class="author">Bram Stoker</div>
+<button>Add</button>
+</div>
+
+<div class="book">
+<img src="https://covers.openlibrary.org/b/id/8319256-L.jpg">
+<h4>Frankenstein</h4>
+<div class="author">Mary Shelley</div>
+<button>Add</button>
+</div>
+
+<div class="book">
+<img src="https://covers.openlibrary.org/b/id/8231856-L.jpg">
+<h4>The Shining</h4>
+<div class="author">Stephen King</div>
+<button>Add</button>
+</div>
+
+<div class="book">
+<img src="https://covers.openlibrary.org/b/id/8235085-L.jpg">
+<h4>IT</h4>
+<div class="author">Stephen King</div>
+<button>Add</button>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ADVENTURE -->
+
+<section class="category">
+
+<h2>🏔 Adventure</h2>
+
+<div class="book-row">
+
+<div class="book">
+<img src="https://covers.openlibrary.org/b/id/8231850-L.jpg">
+<h4>The Hobbit</h4>
+<div class="author">J.R.R. Tolkien</div>
+<button>Add</button>
+</div>
+
+<div class="book">
+<img src="https://covers.openlibrary.org/b/id/8232006-L.jpg">
+<h4>Treasure Island</h4>
+<div class="author">R.L. Stevenson</div>
+<button>Add</button>
+</div>
+
+<div class="book">
+<img src="https://covers.openlibrary.org/b/id/8232007-L.jpg">
+<h4>Into the Wild</h4>
+<div class="author">Jon Krakauer</div>
+<button>Add</button>
+</div>
+
+<div class="book">
+<img src="https://covers.openlibrary.org/b/id/8232008-L.jpg">
+<h4>Life of Pi</h4>
+<div class="author">Yann Martel</div>
+<button>Add</button>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
+```
